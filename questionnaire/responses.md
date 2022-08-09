@@ -25,6 +25,8 @@ However, if you use both solutions at the same time - a `PureComponent` with the
 --- 
 **2. Context + ShouldComponentUpdate might be dangerous. Can think of why is
 that?**
+
+
 `shouldComponentUpdate`  can block the context propagation in the component tree 
 
 --- 
