@@ -21,10 +21,13 @@ To avoid this behavior, there are two solutions:
 However, if you use both solutions at the same time - a `PureComponent` with the 
 `shouldComponentUpdate()`, your app is going to break.
 
+
+--- 
 **2. Context + ShouldComponentUpdate might be dangerous. Can think of why is
 that?**
 `shouldComponentUpdate`  can block the context propagation in the component tree 
 
+--- 
 **3. Describe 3 ways to pass information from a component to its PARENT.**
 
  1 -  Passing a function as a prop to child
@@ -59,10 +62,12 @@ that?**
 	    <button onClick={handleClick} />
 	}
 
+--- 
 **4. Give 2 ways to prevent components from re-rendering.**
 1. Using `useMemo` hook for functional components
 2. Using `useRef` instead of `useState` when using forms
 
+--- 
 **5. What is a fragment and why do we need it? Give an example where it might
 break my app.**
 React fragment is used when you need to wrap more than one element in the same level into a component, eliminating unnecessary `div`'s , for example: 
@@ -88,6 +93,7 @@ In this cases, you should use:
 		))}
 	</div>
 
+--- 
 **6. Give 3 examples of the HOC pattern.**
 Loader example:
 
@@ -135,6 +141,7 @@ Blog/External Data example:
       };
     }
 
+--- 
 **7. what's the difference in handling exceptions in promises, callbacks and
 async...await.**
 
@@ -167,9 +174,11 @@ Callbacks:
 	    // ...
     })
 
+--- 
 **8. How many arguments does setState take and why is it async.**
 The `setState` takes 2 arguments: `setState(updater, [callback])`, and since it can be an expensive operation that can block browser response, it is async
 
+--- 
 **9. List the steps needed to migrate a Class to Function Component.**
 1 - Change class notation `class App extends Component {}` to function: `function App() {}`
 
@@ -212,17 +221,19 @@ to `return` usage only:
 	}, [])
 
 
+--- 
 **10. List a few ways styles can be used with components.**
 
 1. Inline styles
 
 		<div style={{ width: 300, height: 300, backgroundColor: 'red' }} />
 
-2. Using 3rd party libraries like `Styled-Component`, scss or sass
+2. Using 3rd party libraries like `Styled-Component`, `scss` or `sass`
 
 3. Using `import style from './style.module.css'`  or `import  './App.css'` approach
 
 
+--- 
 **11. How to render an HTML string coming from the server.**
 
     function MyComponent() {
