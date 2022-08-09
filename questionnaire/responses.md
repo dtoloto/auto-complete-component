@@ -72,6 +72,8 @@ that?**
 --- 
 **5. What is a fragment and why do we need it? Give an example where it might
 break my app.**
+
+
 React fragment is used when you need to wrap more than one element in the same level into a component, eliminating unnecessary `div`'s , for example: 
 
 	    <>
@@ -97,6 +99,8 @@ In this cases, you should use:
 
 --- 
 **6. Give 3 examples of the HOC pattern.**
+
+
 Loader example:
 
     function LoadingHOC(WrappedComponent) {
@@ -143,9 +147,11 @@ Blog/External Data example:
       };
     }
 
+
 --- 
 **7. what's the difference in handling exceptions in promises, callbacks and
 async...await.**
+
 
 For `async/await` :
 
@@ -178,10 +184,14 @@ Callbacks:
 
 --- 
 **8. How many arguments does setState take and why is it async.**
+
+
 The `setState` takes 2 arguments: `setState(updater, [callback])`, and since it can be an expensive operation that can block browser response, it is async
 
 --- 
 **9. List the steps needed to migrate a Class to Function Component.**
+
+
 1 - Change class notation `class App extends Component {}` to function: `function App() {}`
 
 2- Change `render()` method 
