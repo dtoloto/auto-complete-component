@@ -23,12 +23,16 @@ However, if you use both solutions at the same time - a `PureComponent` with the
 
 
 --- 
+--- 
+---  
 **2. Context + ShouldComponentUpdate might be dangerous. Can think of why is
 that?**
 
 
 `shouldComponentUpdate`  can block the context propagation in the component tree 
 
+--- 
+--- 
 --- 
 **3. Describe 3 ways to pass information from a component to its PARENT.**
 
@@ -65,10 +69,14 @@ that?**
 	}
 
 --- 
+--- 
+--- 
 **4. Give 2 ways to prevent components from re-rendering.**
 1. Using `useMemo` hook for functional components
 2. Using `useRef` instead of `useState` when using forms
 
+--- 
+--- 
 --- 
 **5. What is a fragment and why do we need it? Give an example where it might
 break my app.**
@@ -97,6 +105,8 @@ In this cases, you should use:
 		))}
 	</div>
 
+--- 
+--- 
 --- 
 **6. Give 3 examples of the HOC pattern.**
 
@@ -149,6 +159,8 @@ Blog/External Data example:
 
 
 --- 
+--- 
+--- 
 **7. what's the difference in handling exceptions in promises, callbacks and
 async...await.**
 
@@ -183,11 +195,15 @@ Callbacks:
     })
 
 --- 
+--- 
+--- 
 **8. How many arguments does setState take and why is it async.**
 
 
 The `setState` takes 2 arguments: `setState(updater, [callback])`, and since it can be an expensive operation that can block browser response, it is async
 
+--- 
+--- 
 --- 
 **9. List the steps needed to migrate a Class to Function Component.**
 
@@ -234,6 +250,8 @@ to `return` usage only:
 
 
 --- 
+--- 
+--- 
 **10. List a few ways styles can be used with components.**
 
 1. Inline styles
@@ -245,6 +263,8 @@ to `return` usage only:
 3. Using `import style from './style.module.css'`  or `import  './App.css'` approach
 
 
+--- 
+--- 
 --- 
 **11. How to render an HTML string coming from the server.**
 
