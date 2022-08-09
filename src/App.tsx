@@ -1,12 +1,12 @@
-import './App.css';
-import { Box, SearchInput } from './components';
+import './App.css'
+import { Box, SearchInput } from './components'
 
 function App() {
   return (
     <Box>
       <SearchInput />
     </Box>
-  );
+  )
 }
 
-export default App;
+export default App
