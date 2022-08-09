@@ -7,14 +7,14 @@ It is a simple input component where users can search for USA Universities, but 
 To list the USA Universities, this [API](http://universities.hipolabs.com/search?country=United%20States) was used.
 
 [**DEMO**](https://auto-complete-component-six.vercel.app/)
-***Obs: Demo link can present some issues because the Universities API is not using SSL, so the data can't be fetched***
+***Obs: Demo link can present some issues because the Universities API is not using SSL connection, so the data can't be fetched***
 
 
 **To run it locally, please, follow the instructions:**
 
  After cloning and accessing the project folder, run:
 
-      yarn install
+    yarn install
 
 With all the dependencies properly installed, run:
 
