@@ -14,7 +14,7 @@ To list the USA Universities, this [API](http://universities.hipolabs.com/search
 
  After cloning and accessing the project folder, run:
 
-      yarn install
+    yarn install
 
 With all the dependencies properly installed, run:
 
